@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form registrazione</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <section>
+
+            <form action="" method="GET">
+
+                <div>
+                    <label class="block" for="first-name">
+                        Nome*
+                    </label>
+                    <input type="text" id="first-name" name="first_name" minlength="3" maxlength="10" placeholder="Inserisci il tuo nome..." required>
+                </div>
+
+                <div>
+                    <label class="block" for="email">
+                        Email*
+                    </label>
+                    <input type="text" id="email" name="email" placeholder="Inserisci la tua email..." required>
+                </div>
+
+                <div>
+                    <label class="block" for="password">
+                        Password*
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Inserisci la tua password..." required>
+                </div>
+
+                <div>
+                    <label class="block" for="bio">
+                        Bio
+                    </label>
+                    <textarea id="bio" rows="4" cols="20" placeholder="Inserisci la tua bio..."></textarea>
+                </div>
+
+                <div>
+                    <label class="block" for="gender">
+                        Genere*
+                    </label>
+                    <select id="gender" name="gender" required>
+                        <option disabled selected>Seleziona un'opzione...</option>
+                        <option value="man">Uomo</option>
+                        <option value="woman">Donna</option>
+                        <option value="unknown">Preferisco non rispodnere</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="policy" name="policy" value="accettato" required>
+                    <label for="policy">
+                        * Accetto la privacy policy
+                    </label>
+                </div>
+
+                <div>
+                    <input type="submit" value="Registrati">
+                </div>
+
+            </form>
+
+        </section>
+        
+        <section id="test">
+            <!-- Input -->
+            <div>
+                <label for="first-name" class="block">
+                    Nome*
+                </label>
+                <input type="text" placeholder="Inserisci il tuo nome..."> 
+            </div>
+            <div>
+                <h2>
+                    Lista della spesa
+                </h2>
+                <div>
+                    <input id="bread" type="checkbox">
+                    <label for="bread">
+                        Pane
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" checked> Acqua
+                </div>
+                <div>
+                    <input type="checkbox"> Latte
+                </div>
+            </div>
+            <div>
+                <input id="gender-1" type="radio" name="gender" checked>
+                <label for="gender-1">
+                    Nessuno
+                </label>
+                <input id="gender-2" type="radio" name="gender">
+                <label for="gender-2">
+                    Preferisco non rispondere
+                </label>
+            </div>
+            <input type="email" placeholder="Inserisci la tua email..." disabled>
+            <input type="password" id="first-name">
+            <input type="number" placeholder="Inserisci la tua età...">
+            <input type="color">
+            <input type="date">
+            <input type="file">
+            <input type="month">
+            <input type="range">
+            <input type="time">
+            <!-- Value diverso -->
+            <input type="submit" value="Sottometti sto form">
+
+            <!-- Select -->
+            <select name="scelta">
+                <option disabled selected>Seleziona la tua opzione...</option>
+                <option value="opt1">Opzione1</option>
+                <option value="opt2">Opzione2</option>
+            </select>
+
+            <!-- Textarea -->
+            <div>
+                <textarea name="name" rows="10" cols="200" placeholder="Inserisci il tuo messaggio..."></textarea>
+            </div>
+        </section>
+
+    </body>
+</html>
